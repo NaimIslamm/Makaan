@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makaan</title>
+    <!-- Link SwiperJS --------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Link SwiperJS --------------->
+
+    <!-- Link Style CSS -------------->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link Style CSS------------ -->
+
+    <!-- Google Font Link ------------->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Google Font Link -->
+    <!-- fontawesome-icon -->
+    <script
+      src="https://kit.fontawesome.com/1ce6f653f8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header-scetion-wrapper">
+      <div class="header-section-inner">
+        <!-- start menu section -->
+        <nav>
+          <div class="main-menu container">
+            <div class="logo">
+              <img src="assets/images/icon-deal.png" alt="" /><a
+                href="index.html"
+                >Makaan
+              </a>
+            </div>
+
+            <div class="menu-btn-section sidebar">
+              <!-- close button -->
+              <div class="menu-btn">
+                <i class="fa-solid fa-xmark" onclick="hideSidebar()"></i>
+              </div>
+              <!-- close button -->
+              <a href="index.html">Homes</a>
+              <a href="#">About</a>
+              <a href="#">Propert</a>
+              <a href="#">Pages</a>
+              <a
+                href="https://www.linkedin.com/in/naimmislam-seo-expert?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXNr77fnrTI2R1%2FQe2Rf3XA%3D%3D"
+                >Contact</a
+              >
+              <a class="btn nav-btn" href="#">Add Property</a>
+            </div>
+            <!-- HAMBURGER -->
+            <div class="menu-btn">
+              <i class="fa-solid fa-bars" onclick="showSidebar()"></i>
+            </div>
+            <!-- HAMBURGER -->
+          </div>
+        </nav>
+        <!-- End menu section -->
+      </div>
+      <div class="hero-section-wrapper">
+        <div class="hero-section-inner">
+          <div class="hero-1st-coloum">
+            <h1>Find A Perfect Home To Live With Your Family</h1>
+            <p>
+              Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no.
+              Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.
+            </p>
+            <button><div class="btn">Get Started</div></button>
+          </div>
+          <div class="hero-2nd-coloum">
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slider-one"></div>
+                <div class="swiper-slide slider-two"></div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev hero-slider-btn"></div>
+              <div class="swiper-button-next hero-slider-btn"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- JS -->
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script> -->
+    <script src="js.script"></script>
+    <!-- JS-->
+  </body>
+</html>

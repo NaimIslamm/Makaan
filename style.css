@@ -1,0 +1,233 @@
+/* ------Font Uploaded--------- */
+/*--------- HEEBO + INTER------ */
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/*--------- HEEBO + INTER------ */
+/* ------------RESET CSS---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ------------RESET CSS---------- */
+/*-----------------End Common CSS---------- */
+:root {
+  --primary: #00b98e;
+  --secondary: #0e2e50;
+  --light: #effdf5;
+  --primary-font: "Inter", serif;
+  --second-font: "Heebo", serif;
+}
+/* -----layout css----- */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* -----layout css----- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
+}
+p,
+a,
+span,
+li,
+input,
+button {
+  font-family: var(--second-font);
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: #effdf5;
+  background-color: #00b98e !important;
+  border: 0px solid;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  line-height: 1.5rem;
+}
+.btn a {
+  color: #effdf5;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 1.5rem;
+}
+.btn:hover {
+  background-color: #36d1ad !important;
+}
+button {
+  border: 0px solid;
+  background-color: unset;
+}
+/*-----------------End Common CSS---------- */
+/*----------------- Started Header Section------------- */
+/*----------------- Started Meun Section------------- */
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  line-height: 1rem;
+  font-size: 40px;
+}
+.logo a {
+  color: var(--primary);
+  font-family: var(--primary-font);
+  text-decoration: none;
+}
+.logo img {
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  border: 1px dashed var(--primary);
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.menu-btn-section {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.menu-btn-section a {
+  text-decoration: none;
+  color: var(--secondary);
+  margin-right: 30px;
+  font-weight: 500;
+}
+.menu-btn-section:active {
+  color: var(--light);
+}
+.menu-btn-section a:hover {
+  color: var(--primary) !important;
+}
+
+.menu-btn {
+  display: none;
+}
+.nav-btn {
+  padding: 0.5rem 0.9rem;
+  line-height: 1.5rem;
+  color: var(--light) !important;
+}
+.nav-btn:hover a {
+  color: var(--light);
+}
+.nav-btn a {
+  padding: 1rem 1rem;
+  line-height: 1.5rem;
+  text-transform: unset;
+}
+/*----------------- Ended Meun Section------------- */
+/* --------------------HERO SECTION----------------- */
+.hero-section-inner {
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: center;
+}
+.hero-1st-coloum {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.hero-2nd-coloum {
+  width: 50%;
+}
+.swiper-slide {
+  width: 100%;
+  max-width: 631px;
+  height: 631px;
+  object-fit: cover;
+  background-position: center;
+}
+.slider-one {
+  background-image: url(assets/images/carousel-1.jpg);
+}
+.slider-two {
+  background-image: url(assets/images/carousel-2.jpg);
+}
+.hero-slider-btn {
+  color: white;
+  background-color: var(--primary);
+  padding: 2rem;
+  border-radius: 50px;
+}
+.hero-slider-btn::before {
+  font-size: 20px;
+}
+/* --------------------HERO SECTION----------------- */
+
+/*----------------- Ended Header Section------------- */
+/*---------STARTED RESPONSIVE CSS----------- */
+@media screen and (max-width: 768px) {
+  .main-menu {
+    background-color: white;
+    padding: 15px;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .menu-btn-section {
+    /* display: none; */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 95%;
+    height: 50vh;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    gap: 5px;
+    transition: all 0.5s ease !important;
+    font-size: 1.2rem;
+  }
+
+  .menu-btn-section a {
+    margin-top: 15px;
+    padding: 0 20px;
+  }
+  .menu-btn i {
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 2rem;
+    margin: 15px 30px;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+  }
+
+  .fa-xmark i:hover::after {
+    width: 0%;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
