@@ -65,6 +65,9 @@ button {
   border: 0px solid;
   background-color: unset;
 }
+.coloring {
+  color: var(--primary);
+}
 /*-----------------End Common CSS---------- */
 /*----------------- Started Header Section------------- */
 /*----------------- Started Meun Section------------- */
@@ -142,7 +145,6 @@ button {
 /* --------------------HERO SECTION----------------- */
 .hero-section-inner {
   display: flex;
-  padding: 0 20px;
   align-items: center;
   justify-content: center;
 }
@@ -150,9 +152,10 @@ button {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   justify-content: center;
   align-items: flex-start;
+  padding: 3rem;
 }
 .hero-2nd-coloum {
   width: 50%;
@@ -179,6 +182,18 @@ button {
 .hero-slider-btn::before {
   font-size: 20px;
 }
+.hero-1st-coloum h1 {
+  max-width: 500px;
+  font-size: 3rem;
+  color: var(--secondary);
+  font-family: var(--second-font);
+  line-height: 3.3rem;
+}
+.hero-1st-coloum p {
+  font-family: var(--second-font);
+  font-size: 1rem;
+  color: #666565;
+}
 /* --------------------HERO SECTION----------------- */
 
 /*----------------- Ended Header Section------------- */
@@ -186,7 +201,7 @@ button {
 @media screen and (max-width: 768px) {
   .main-menu {
     background-color: white;
-    padding: 15px;
+    padding: 15px 25px;
   }
   .logo {
     font-size: 30px;
@@ -218,7 +233,7 @@ button {
   .menu-btn i {
     color: rgba(0, 0, 0, 0.55);
     font-size: 2rem;
-    margin: 15px 30px;
+    /* margin: 15px 30px; */
     padding: 0.5rem 1rem;
     border: 1px solid var(--secondary);
     border-radius: 5px;
@@ -229,5 +244,18 @@ button {
   }
   .nav-btn {
     display: none;
+  }
+  .hero-section-inner {
+    flex-direction: column;
+  }
+  .hero-1st-coloum {
+    width: 100%;
+    order: 2;
+  }
+  .hero-2nd-coloum {
+    width: 100%;
+  }
+  .swiper-slide {
+    height: 412px;
   }
 }
