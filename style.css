@@ -173,6 +173,9 @@ button {
   height: 631px;
   object-fit: cover;
   background-position: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .slider-one {
   background-image: url(assets/images/carousel-1.jpg);
