@@ -385,6 +385,152 @@ form > .btn:hover {
   background-color: #00b98e;
 }
 /* ------End Place-to-Find Section----------- */
+/*-----------Property-listing-Section----------- */
+.property-listing-inner {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 60px 20px;
+  gap: 30px;
+}
+.property-list-1st-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.property-1st-row-1st-coloum {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 5px;
+}
+.property-1st-row-1st-coloum h2 {
+  font-family: var(--second-font);
+  font-size: 2.5rem;
+  color: var(--secondary);
+}
+.property-1st-row-1st-coloum p {
+  font-family: var(--second-font);
+  font-size: 1rem;
+  color: #666565;
+}
+.property-1st-row-2nd-coloum {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+}
+.property-1st-row-2nd-coloum a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--primary);
+  padding: 5px 12px;
+  border-radius: 5px;
+}
+.property-list-2nd-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.property-card {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+}
+.property-card {
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+}
+
+.card-image {
+  overflow: hidden;
+}
+.card-image img {
+  width: 100%;
+  max-width: 355px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+.property-card:hover img {
+  transform: scale(1.2);
+}
+.card-description {
+  padding: 20px 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.amount {
+  font-size: 2rem;
+  color: var(--primary);
+  font-family: var(--primary-font);
+  font-weight: 700;
+}
+.property-name {
+  font-size: 2rem;
+  color: var(--secondary);
+  font-family: var(--primary-font);
+  font-weight: 700;
+}
+.property-name:hover {
+  color: var(--primary);
+}
+.property-adresses {
+  display: flex;
+  gap: 10px;
+  color: #666565;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: var(--second-font);
+}
+.fa-location-dot {
+  color: var(--primary);
+  font-size: 1rem;
+}
+.fa-ruler-combined {
+  color: var(--primary);
+  font-size: 1rem;
+}
+.fa-bed {
+  color: var(--primary);
+  font-size: 1rem;
+}
+.fa-bath {
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+.property-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dashed var(--primary);
+}
+.property-details p {
+  display: flex;
+  gap: 8px;
+  color: #666565;
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-family: var(--second-font);
+  padding: 8px 20px;
+}
+.property-details p:first-child {
+  border-right: 1px dashed var(--primary) !important;
+}
+.property-details p:nth-child(2) {
+  border-right: 1px dashed var(--primary) !important;
+}
+
+/*-----------End-Property-listing-Section----------- */
 
 /*----------------- Ended Header Section------------- */
 /*---------STARTED RESPONSIVE CSS----------- */
@@ -458,8 +604,37 @@ form > .btn:hover {
   }
   .place-to-find-inner {
     flex-direction: column;
+    gap: 20px;
   }
   .place-to-find-2nd-coloum {
+    width: 100%;
+  }
+  .place-to-find-inner .hero-1st-coloum {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .place-to-find-inner > .hero-1st-coloum h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .property-listing-inner {
+    padding: 40px 20px;
+  }
+  .property-list-1st-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .property-1st-row-1st-coloum {
+    width: 100%;
+  }
+  .property-1st-row-2nd-coloum {
+    width: 100%;
+    justify-content: left;
+  }
+  .property-list-2nd-row {
+    flex-direction: column;
+  }
+  .property-card {
     width: 100%;
   }
 }
