@@ -338,6 +338,53 @@ form > .btn:hover {
   color: var(--primary);
 }
 /* -----------End-Property-Types-Section--------- */
+/* ------Place-to-Find Section----------- */
+.place-to-find-inner {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.hero-1st-coloum p {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: #666565;
+}
+.fa-check {
+  font-size: 20px;
+  color: var(--primary);
+  font-weight: 700;
+}
+.place-to-find-2nd-coloum {
+  width: 50%;
+  order: 1 !important;
+  text-align: right;
+  position: relative;
+  overflow: hidden;
+}
+.place-to-find-2nd-coloum img {
+  width: 100%;
+  max-width: 486px;
+  object-fit: cover;
+  padding: 30px 0;
+  /* margin-top: 40px; */
+}
+.place-to-find-2nd-coloum::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -50%;
+  z-index: -1;
+  transform: skew(20deg);
+  background-color: #00b98e;
+}
+/* ------End Place-to-Find Section----------- */
 
 /*----------------- Ended Header Section------------- */
 /*---------STARTED RESPONSIVE CSS----------- */
@@ -408,5 +455,11 @@ form > .btn:hover {
   }
   .mini-form-section-inner {
     padding: 35px;
+  }
+  .place-to-find-inner {
+    flex-direction: column;
+  }
+  .place-to-find-2nd-coloum {
+    width: 100%;
   }
 }
