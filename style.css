@@ -384,12 +384,14 @@ form > .btn:hover {
   transform: skew(20deg);
   background-color: #00b98e;
 }
+
 /* ------End Place-to-Find Section----------- */
 /*-----------Property-listing-Section----------- */
 .property-listing-inner {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  align-items: center;
   padding: 60px 20px;
   gap: 30px;
 }
@@ -439,15 +441,14 @@ form > .btn:hover {
   display: flex;
   flex-direction: column;
   width: 32%;
-}
-.property-card {
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: white;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
 }
 
 .card-image {
   overflow: hidden;
+  position: relative;
 }
 .card-image img {
   width: 100%;
@@ -485,7 +486,7 @@ form > .btn:hover {
 }
 .property-adresses {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   color: #666565;
   font-size: 1.5rem;
   font-weight: 300;
@@ -521,13 +522,45 @@ form > .btn:hover {
   font-size: 0.8rem;
   font-weight: 300;
   font-family: var(--second-font);
-  padding: 8px 20px;
+  padding: 8px 18px;
 }
 .property-details p:first-child {
   border-right: 1px dashed var(--primary) !important;
 }
 .property-details p:nth-child(2) {
   border-right: 1px dashed var(--primary) !important;
+}
+.position-top {
+  color: white;
+  background-color: var(--primary);
+  font-family: var(--second-font);
+  font-family: 1rem;
+  padding: 4px 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+.position-bottom {
+  color: var(--primary);
+  background-color: white;
+  font-family: var(--second-font);
+  font-family: 1rem;
+  padding: 2px 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 5px 5px 0px 0px;
+}
+.property-listing-button {
+  padding: 20px 35px;
+  width: fit-content;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 /*-----------End-Property-listing-Section----------- */
