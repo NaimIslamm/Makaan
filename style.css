@@ -41,7 +41,7 @@ button {
 }
 .btn {
   display: inline-block;
-  padding: 1rem 3rem;
+  padding: 1rem 2.8rem;
   font-size: 1rem;
   color: #effdf5;
   background-color: #00b98e;
@@ -52,7 +52,7 @@ button {
 }
 .btn a {
   color: #effdf5;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   text-decoration: none;
   text-align: center;
   text-transform: capitalize;
@@ -564,6 +564,69 @@ form > .btn:hover {
 }
 
 /*-----------End-Property-listing-Section----------- */
+/*-------------------- Start Contact Section------------------ */
+.contact-section-wrapper {
+  background-color: #effdf5;
+  padding: 20px;
+  border-radius: 10px;
+}
+.contact-section-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px dashed #effdf5;
+}
+.contact-section-1st-coloum {
+  width: 50%;
+}
+.contact-section-1st-coloum img {
+  width: 100%;
+  max-width: 496px;
+  border-radius: 5px;
+}
+.contact-section-2nd-coloum {
+  width: 50%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-section-2nd-coloum h2 {
+  font-size: 2.5rem;
+  font-family: var(--primary-font);
+  color: var(--secondary);
+}
+.contact-section-2nd-coloum p {
+  font-size: 1rem;
+  font-family: var(--primary-font);
+  color: #666565;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+.call-to-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+}
+.call-to-action-btn2 {
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+}
+.call-to-action-btn2:hover {
+  background-color: var(--secondary) !important;
+}
+/*--------------------End Contact Section------------------ */
 
 /*----------------- Ended Header Section------------- */
 /*---------STARTED RESPONSIVE CSS----------- */
@@ -669,5 +732,22 @@ form > .btn:hover {
   }
   .property-card {
     width: 100%;
+  }
+  .contact-section-inner {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact-section-1st-coloum {
+    width: 100%;
+  }
+  .contact-section-2nd-coloum {
+    width: 100%;
+    padding: 0;
+  }
+  .contact-section-2nd-coloum h2 {
+    font-size: 1.8rem;
+  }
+  .buttons {
+    flex-direction: column;
   }
 }
