@@ -627,6 +627,99 @@ form > .btn:hover {
   background-color: var(--secondary) !important;
 }
 /*--------------------End Contact Section------------------ */
+/* ---------------------Started Property-Agents-Section----------------- */
+.property-agents-section-wrapper {
+}
+.property-agents-section-inner {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  gap: 35px;
+}
+.property-section-1st-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.property-section-1st-row h2 {
+  font-size: 2.5rem;
+  font-family: var(--primary-font);
+  color: var(--secondary);
+  text-align: center;
+}
+.property-section-1st-row p {
+  font-size: 1rem;
+  color: #666565;
+  text-align: center;
+  max-width: 650px;
+}
+.property-section-2nd-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+.image-box {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0.5px rgba(0.5, 0.5, 0.5, 0.08);
+}
+.image-box-image img {
+  width: 100%;
+  max-width: 261px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px 5px 0px 0px;
+}
+.img-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.img-icons i {
+  color: var(--primary);
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 0 0.5px rgba(0, 0, 0, 0.08);
+  width: 45px;
+  height: 45px;
+  font-weight: 700;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out;
+}
+.img-icons i:hover {
+  background-color: var(--primary);
+  color: white;
+}
+.image-box-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px;
+  padding-bottom: 20px;
+}
+.image-box-description h6 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-top: 20px;
+  color: var(--secondary);
+}
+.image-box-description p {
+  font-size: 1rem;
+  color: #666565;
+  text-align: center;
+}
+/* ---------------------Ended Property-Agents-Section----------------- */
 
 /*----------------- Ended Header Section------------- */
 /*---------STARTED RESPONSIVE CSS----------- */
@@ -749,5 +842,8 @@ form > .btn:hover {
   }
   .buttons {
     flex-direction: column;
+  }
+  .property-section-1st-row h2 {
+    font-size: 1.8rem;
   }
 }
