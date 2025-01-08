@@ -322,6 +322,7 @@ form > .btn:hover {
   height: auto;
   padding: 15px;
   object-fit: cover;
+  object-position: center;
   border: 1px dashed var(--primary);
   border-radius: 50px;
 }
@@ -567,7 +568,7 @@ form > .btn:hover {
 /*-------------------- Start Contact Section------------------ */
 .contact-section-wrapper {
   background-color: #effdf5;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
 }
 .contact-section-inner {
@@ -603,7 +604,6 @@ form > .btn:hover {
 }
 .contact-section-2nd-coloum p {
   font-size: 1rem;
-  font-family: var(--primary-font);
   color: #666565;
 }
 .buttons {
@@ -628,8 +628,7 @@ form > .btn:hover {
 }
 /*--------------------End Contact Section------------------ */
 /* ---------------------Started Property-Agents-Section----------------- */
-.property-agents-section-wrapper {
-}
+
 .property-agents-section-inner {
   display: flex;
   flex-direction: column;
@@ -668,7 +667,8 @@ form > .btn:hover {
 .image-box {
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 0.5px rgba(0.5, 0.5, 0.5, 0.08);
+  box-shadow: 4.8px 12px 11.9px 2.8px rgba(0, 0, 0, 0.08);
+  padding: 10px 0;
 }
 .image-box-image img {
   width: 100%;
@@ -720,6 +720,112 @@ form > .btn:hover {
   text-align: center;
 }
 /* ---------------------Ended Property-Agents-Section----------------- */
+/* -----------------Start-Our-Clients-Says-Section------------------- */
+.our-clients-says-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+}
+/* --------SLIDER--------- */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 50%; /* Two slides per view */
+  box-sizing: border-box;
+  padding: 20px;
+}
+.testimonial-wrapper {
+  background-color: #effdf5;
+  padding: 14px;
+  border-radius: 8px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px dashed var(--primary);
+}
+
+.testimonial img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  /* margin-bottom: 10px; */
+}
+
+.testimonial h4 {
+  font-size: 1rem;
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+.testimonial p {
+  color: #666565;
+  font-size: 0.875rem;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.slider-controls button {
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.clients-description {
+  display: flex;
+  justify-content: left;
+  gap: 15px;
+}
+.clients-msg p {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.clients-designation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+/* .slider-controls button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+} */
+/* -----------------End-Our-Clients-Says-Section------------------- */
 
 /*----------------- Ended Header Section------------- */
 /*---------STARTED RESPONSIVE CSS----------- */
@@ -842,6 +948,9 @@ form > .btn:hover {
   }
   .buttons {
     flex-direction: column;
+  }
+  .image-box-image img {
+    max-width: 375px;
   }
   .property-section-1st-row h2 {
     font-size: 1.8rem;
