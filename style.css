@@ -567,6 +567,10 @@ form > .btn:hover {
 /*-----------End-Property-listing-Section----------- */
 /*-------------------- Start Contact Section------------------ */
 .contact-section-wrapper {
+  padding: 0 20px;
+}
+
+.contact-section-inner-main {
   background-color: #effdf5;
   padding: 15px;
   border-radius: 10px;
@@ -832,7 +836,13 @@ form > .btn:hover {
   background-color: var(--secondary);
 }
 .footer-section-inner {
-  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 80px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .footer-section-1st-row {
   display: flex;
@@ -845,6 +855,9 @@ form > .btn:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+.footer-1st-row-coloum i {
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 .footer-1st-row-coloum h6 {
   font-size: 1.25rem;
@@ -860,13 +873,17 @@ form > .btn:hover {
   font-size: 1rem;
   padding-bottom: 10px;
 }
+.second-coloum p:hover {
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
 .footer-1st-row-coloum a {
   text-decoration: none;
   list-style: none;
   color: rgba(255, 255, 255, 0.5) !important;
   font-size: 15px;
 }
-.img-icons i {
+.image-icons i {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.5);
   color: #effdf5;
@@ -874,6 +891,7 @@ form > .btn:hover {
   height: 35px;
   padding: 10px;
   font-size: 15px;
+  border-radius: 50px;
 }
 .footer-image-box {
   display: flex;
@@ -913,7 +931,31 @@ form > .btn:hover {
 .footer-form-btn {
   padding: 0.6rem 1rem;
 }
-
+.footer-section-2nd-row {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+}
+.footer-section-2nd-row p {
+  color: rgba(255, 255, 255, 0.5);
+}
+.menu-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 20px; */
+}
+.menu-footer a {
+  color: white;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.menu-footer a:last-child {
+  border: 0px solid;
+  padding-right: 0;
+}
 /*----------------- Ended Header Section------------- */
 /*---------STARTED RESPONSIVE CSS----------- */
 @media screen and (max-width: 768px) {
@@ -983,6 +1025,9 @@ form > .btn:hover {
   }
   .mini-form-section-inner {
     padding: 35px;
+  }
+  .icon-box {
+    font-size: 1.5rem;
   }
   .place-to-find-inner {
     flex-direction: column;
@@ -1058,5 +1103,10 @@ form > .btn:hover {
   }
   .footer-1st-row-coloum {
     width: 100%;
+  }
+  .footer-section-2nd-row {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
   }
 }
