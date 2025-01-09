@@ -29,16 +29,20 @@ const swiper = new Swiper('.swiper', {
 
 
 
-  const sliderWrapper = document.querySelector('.slider-wrapper');
+ const sliderWrapper = document.querySelector('.slider-wrapper');
     const slides = document.querySelectorAll('.slide');
     const prevButton = document.getElementById('prev');
     const nextButton = document.getElementById('next');
 
     let currentIndex = 0;
-    const slideWidth = slides[0].clientWidth;
 
     function updateSliderPosition() {
+        const slideWidth = slides[0].clientWidth;
         sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    function updateMaxIndex() {
+        return window.innerWidth <= 768 ? slides.length - 1 : slides.length - 2;
     }
 
     prevButton.addEventListener('click', () => {
@@ -47,8 +51,7 @@ const swiper = new Swiper('.swiper', {
     });
 
     nextButton.addEventListener('click', () => {
-        const maxIndex = window.innerWidth <= 768 ? slides.length - 1 : slides.length - 2;
-        currentIndex = Math.min(currentIndex + 1, maxIndex);
+        currentIndex = Math.min(currentIndex + 1, updateMaxIndex());
         updateSliderPosition();
     });
 

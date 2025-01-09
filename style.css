@@ -300,7 +300,7 @@ form > .btn:hover {
   align-items: center;
   justify-content: center;
   background-color: white;
-  border: 1px dashed rgba(0, 185, 142, 0.3);
+  border: 1px dashed var(--primary);
   padding: 20px 60px;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
@@ -580,7 +580,7 @@ form > .btn:hover {
   padding: 20px;
   background-color: white;
   border-radius: 5px;
-  border: 2px dashed #effdf5;
+  border: 1px dashed var(--primary);
 }
 .contact-section-1st-coloum {
   width: 50%;
@@ -680,7 +680,7 @@ form > .btn:hover {
 .img-icons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 10px;
 }
 .img-icons i {
@@ -740,6 +740,7 @@ form > .btn:hover {
 .slider-wrapper {
   display: flex;
   transition: transform 0.5s ease;
+  margin: 0 auto;
 }
 
 .slide {
@@ -826,6 +827,55 @@ form > .btn:hover {
   background-color: rgba(0, 0, 0, 0.7);
 } */
 /* -----------------End-Our-Clients-Says-Section------------------- */
+/*-------------------- Footer Section-------------- */
+.footer-section-wrapper {
+  background-color: var(--secondary);
+}
+.footer-section-inner {
+  padding: 80px 20px;
+}
+.footer-section-1st-row {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+.footer-1st-row-coloum {
+  width: 25%;
+}
+.footer-1st-row-coloum h6 {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.footer-1st-row-coloum p {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+.footer-1st-row-coloum a {
+  text-decoration: none;
+  list-style: none;
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 15px;
+}
+.footer-image-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+}
+.footer-image-box img {
+  width: 100%;
+  max-width: 75px;
+  object-fit: cover;
+  object-position: center;
+  border: 4px solid #effdf5;
+  border-radius: 5px;
+}
 
 /*----------------- Ended Header Section------------- */
 /*---------STARTED RESPONSIVE CSS----------- */
@@ -954,5 +1004,12 @@ form > .btn:hover {
   }
   .property-section-1st-row h2 {
     font-size: 1.8rem;
+  }
+  .slide {
+    flex: 0 0 100%;
+    width: 85px;
+  }
+  .testimonial {
+    padding: 20px;
   }
 }
