@@ -891,8 +891,15 @@ form > .btn:hover {
   height: 35px;
   padding: 10px;
   font-size: 15px;
+  font-weight: 600;
   border-radius: 50px;
+  transition: all 0.3s ease-in-out;
 }
+.image-icons i:hover {
+  background-color: white;
+  color: var(--primary) !important;
+}
+
 .footer-image-box {
   display: flex;
   flex-wrap: wrap;
