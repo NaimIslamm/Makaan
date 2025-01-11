@@ -103,37 +103,40 @@
             <label for="keywords"></label>
             <input
               type="text"
-              id="keywords"
+              id="box"
+              class="box"
               name="keywords"
-              placeholder="Enter keywords"
+              placeholder="Search keyword"
             />
           </div>
 
           <!-- Property Types Input -->
           <div class="form-group">
             <label for="property-type"></label>
-            <select id="property-type" name="property-type">
+            <select id="box" class="box" name="property-type">
               <option value="" disabled selected>Property type</option>
               <option value="apartment">Apartment</option>
               <option value="house">House</option>
               <option value="condo">Condo</option>
             </select>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
           <!-- location -->
           <div class="form-group">
             <label for="location"></label>
-            <select id="location" name="location">
+            <select id="box" class="box" name="location">
               <option value="" disabled selected>Location</option>
               <option value="apartment">Location 1</option>
               <option value="house">Location 2</option>
               <option value="condo">Location 3</option>
             </select>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
 
           <!-- Location Input -->
 
           <!-- Submit Button -->
-          <button type="submit" class="btn">Search</button>
+          <input type="submit" value="Search" class="btn form-btn" />
         </form>
       </div>
     </div>
@@ -692,7 +695,6 @@
     </footer>
 
     <!-- JS -->
-    <script></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

@@ -80,14 +80,17 @@ button {
   margin: 45px auto;
   padding: 1rem 1.5rem;
   background-color: white;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 11;
 }
+.main-menu.sticky {
+}
 
 .logo {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,6 +115,7 @@ button {
 }
 
 .menu-btn-section {
+  position: relative;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -205,58 +209,60 @@ button {
   color: #666565;
 }
 /* --------------------HERO SECTION----------------- */
+/*----------------- Ended Header Section------------- */
+
 /* ----------------Mini-Form-Section------------- */
 .mini-form-section-inner {
   background-color: var(--primary);
 }
 form {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 2rem 2rem;
 }
-form > .btn {
+.form-btn {
   background-color: var(--secondary);
+  height: 50px;
 }
-form > .btn:hover {
+.form-btn:hover {
   background-color: var(--secondary) !important;
 }
 
-#keywords {
-  padding: 1rem 5rem;
+.box {
+  width: 308px;
+  height: 50px;
   border-radius: 5px;
   border: 0px solid;
-  max-width: 308px;
+  padding: 0px 10px;
+  position: relative;
+  cursor: pointer;
+  appearance: none;
 }
-#keywords::placeholder {
+.box::placeholder {
   text-align: left;
-  font-size: 1rem;
+  font-size: 1rem !important;
   color: #666565;
 }
-#property-type {
-  padding: 1rem 6.2rem;
-  border-radius: 5px;
-  border: 0px solid;
-  max-width: 308px;
+.box:hover {
+  background-color: whitesmoke;
 }
-#property-type > option {
-  text-align: left;
-  font-size: 1rem;
-  color: #666565 !important;
+.box:focus {
+  outline: none;
 }
-#location {
-  padding: 1rem 6.6rem;
-  border-radius: 5px;
-  border: 0px solid;
-  max-width: 308px;
+.form-group {
+  position: relative;
 }
-#location::placeholder {
-  text-align: left;
-  font-size: 1rem;
+.form-group i {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  z-index: 11111111111;
   color: #666565;
+  font-size: 12px;
 }
-
 /* ----------------Mini-Form-Section------------- */
 /* -----------Start-Property-Types-Section--------- */
 .property-types-inner {
@@ -963,7 +969,6 @@ form > .btn:hover {
   border: 0px solid;
   padding-right: 0;
 }
-/*----------------- Ended Header Section------------- */
 /*---------STARTED RESPONSIVE CSS----------- */
 @media screen and (max-width: 768px) {
   .main-menu {
@@ -1024,11 +1029,19 @@ form > .btn:hover {
   .hero-2nd-coloum {
     width: 100%;
   }
+  .hero-1st-coloum h1 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
   .swiper-slide {
     height: 412px;
   }
   form {
     flex-direction: column;
+    padding: 0;
+  }
+  .form-btn {
+    width: 308px;
   }
   .mini-form-section-inner {
     padding: 35px;

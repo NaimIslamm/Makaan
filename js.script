@@ -60,3 +60,8 @@ const swiper = new Swiper('.swiper', {
         updateSliderPosition();
         setTimeout(() => sliderWrapper.style.transition = 'transform 0.5s ease', 0);
     });
+
+    window.addEventListener('scroll', function() {
+  let header = document.querySelector('main-menu');
+  header.classList.toggle('sticky', window.scrollY > 0);
+});
