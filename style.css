@@ -203,7 +203,7 @@ button {
   z-index: 1;
 }
 .swiper-button-prev {
-  top: 65%;
+  top: 60%;
 }
 .hero-slider-btn::after {
   font-size: 18px;
@@ -1055,6 +1055,9 @@ form {
   }
   .hero-slider-btn {
     left: 22px;
+  }
+  .swiper-button-prev {
+    top: 65%;
   }
   form {
     flex-direction: column;
