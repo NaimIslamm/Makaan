@@ -73,20 +73,24 @@ button {
 /*----------------- Started Meun Section------------- */
 
 .main-menu {
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
   margin: 45px auto;
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   background-color: white;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 11;
+  transition: all 0.2s ease-in-out;
 }
-.main-menu.sticky {
+.sticky-menu {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .logo {
@@ -169,8 +173,10 @@ button {
   padding: 3rem;
 }
 .hero-2nd-coloum {
+  position: relative;
   width: 50%;
 }
+
 .swiper-slide {
   width: 100%;
   max-width: 631px;
@@ -188,10 +194,16 @@ button {
   background-image: url(assets/images/carousel-2.jpg);
 }
 .hero-slider-btn {
+  position: absolute;
+  left: -22px;
   color: white;
   background-color: var(--primary);
   padding: 1.5rem;
   border-radius: 50px;
+  z-index: 1;
+}
+.swiper-button-prev {
+  top: 65%;
 }
 .hero-slider-btn::after {
   font-size: 18px;
@@ -972,6 +984,7 @@ form {
 /*---------STARTED RESPONSIVE CSS----------- */
 @media screen and (max-width: 768px) {
   .main-menu {
+    width: 100%;
     background-color: white;
     padding: 15px 25px;
     margin: 0;
@@ -982,8 +995,12 @@ form {
   .menu-btn {
     display: block;
   }
+  .sticky-menu {
+    display: none;
+    transition: all 0.2s ease-in;
+  }
   .menu-btn-section {
-    /* display: none; */
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -1034,7 +1051,10 @@ form {
     line-height: 2.4rem;
   }
   .swiper-slide {
-    height: 412px;
+    height: 450px;
+  }
+  .hero-slider-btn {
+    left: 22px;
   }
   form {
     flex-direction: column;
